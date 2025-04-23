@@ -163,6 +163,7 @@ header > img {
 }
 
 .last02 {
+    
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
@@ -213,7 +214,7 @@ footer {
     max-width: 300px;
     text-align: left;
     padding: 10px;
-    margin: auto;
+    margin-left: 30px;
     color: #333;
 }
 
