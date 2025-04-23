@@ -71,7 +71,7 @@ header > img {
     padding: 40px;
 }
 
-.galleria {
+.galleria:md {
     display: flex;
     flex-direction: column;
     gap: 20px;
