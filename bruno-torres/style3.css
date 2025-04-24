@@ -63,3 +63,89 @@ header > img {
     text-align: left;
     font-size: 4rem;
 }
+
+.centralizador {
+    display: flex;
+    justify-content: center; /* centraliza na horizontal */
+    align-items: center;     /* centraliza na vertical */
+    height: 100vh;           /* ocupa a tela inteira */
+  }
+
+.titulo-com-imagem {
+    display: flex;
+    align-items: center; /* alinha verticalmente */
+    gap: 15px; /* espaço entre o h1 e a imagem */
+  }
+  
+  .titulo-com-imagem img {
+    width: 500px; /* ou o tamanho que quiser */
+    height: auto;
+  }
+
+  picture, img {
+    margin: 30px auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+.servicos-container {
+    background-color: #e9d9cc;
+    padding: 40px 20px;
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+
+.lista-servicos {
+    background-color: #E9D9CC;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .lista-servicos .item {
+    flex: 1 1 300px; /* cresce, encolhe, largura mínima */
+    max-width: 400px;
+  }
+  
+  .lista-servicos dt {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+    font-family: var(--fonte-titulo);
+    color: #03503E;
+  }
+  
+  .lista-servicos dd {
+    margin: 0 0 20px 0;
+    font-family: var(--fonte-padrao);
+    color: #333;
+  }
+
+  .item-centralizado:nth-child(4) {
+    grid-column: 2; /* posiciona a primeira da segunda linha na coluna do meio */
+  }
+  
+  .item-centralizado:nth-child(5) {
+    grid-column: 3; /* posiciona a segunda da segunda linha na terceira coluna */
+  }
+  
+  h2 {
+    text-align: left;
+    color: #03503E;
+  }
+  h3 {
+    text-align: center;
+  }
+
+  footer {
+    font-size: small;
+    color: #E9D9CC;
+    text-align: center;
+    padding: 100px 20px 20px 20px;
+}
