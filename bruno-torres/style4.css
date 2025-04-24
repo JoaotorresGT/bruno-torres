@@ -52,3 +52,46 @@ header > img {
     height: auto;
     display: block;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    max-width: 600px;
+    color: #E9D9CC;
+    text-align: left;
+    font-size: 4rem;
+}
+
+.centralizador {
+    display: flex;
+    justify-content: center; /* centraliza na horizontal */
+    align-items: center;     /* centraliza na vertical */
+    height: 100vh;           /* ocupa a tela inteira */
+  }
+
+.titulo-com-imagem {
+    display: flex;
+    align-items: center; /* alinha verticalmente */
+    gap: 15px; /* espaço entre o h1 e a imagem */
+  }
+  
+  .titulo-com-imagem img {
+    width: 500px; /* ou o tamanho que quiser */
+    height: auto;
+  }
+
+h1 {
+    text-align: center;
+}
+
+
+
+
+footer {
+    font-size: small;
+    color: #E9D9CC;
+    text-align: center;
+    padding: 100px 20px 20px 20px;
+}
