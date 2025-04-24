@@ -183,6 +183,7 @@ header > img {
 }
 
 footer {
+    font-size: small;
     color: #E9D9CC;
     text-align: center;
     padding: 40px 20px;

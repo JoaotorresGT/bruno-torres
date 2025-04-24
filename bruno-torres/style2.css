@@ -12,6 +12,7 @@ body {
     background-image: url(imagens/bg02.png);
     background-attachment: fixed;
     font-family: var(--fonte-padrao);
+    color: white;
 }
 
 nav {
@@ -37,4 +38,65 @@ nav a:hover {
     background-color: #015c3a;
     color: white;
     border-radius: 5px;
+}
+
+img:hover {
+    transform: scale(1.06);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+header > img {
+    margin: 100px auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1 {
+    margin: 100px auto;
+    max-width: 100%;
+    text-align: center;
+    color: #E9D9CC;
+}
+picture, #img1 {
+    margin: 100px auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 30px;
+}
+
+picture, img {
+    margin: 30px auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+
+ul {
+    font-family: var(--fonte-padrao);
+    font-size: medium;
+    color: #E9D9CC;
+    list-style-position: inside; /* ou 'outside' se quiser o marcador mais à esquerda ainda */
+    text-align: justify;
+    padding-left: 20px;
+    margin: 0 auto;
+    width: fit-content; /* ou defina um tamanho fixo se quiser */
+  }
+  
+  h2 {
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    color: #E9D9CC;
+    padding: auto;
+  }
+
+
+
+footer {
+    font-size: small;
+    color: #E9D9CC;
+    text-align: center;
+    padding: 100px 20px 20px 20px;
 }
