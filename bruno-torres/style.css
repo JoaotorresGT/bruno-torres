@@ -16,9 +16,10 @@
 img:hover {
     transform: scale(1.06);
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    border: 2px solid #E9D9CC;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+
 
 body {
     background-color: rgb(41, 41, 41);
@@ -71,11 +72,6 @@ header > img {
     padding: 40px;
 }
 
-.galleria:md {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
 
 #titulo {
     color: #E9D9CC;
@@ -90,7 +86,8 @@ header > img {
 .linha {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    padding-bottom: 13px;
+    gap: 13px;
     justify-content: center;
 }
 
@@ -156,7 +153,7 @@ header > img {
 
 .last02-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* permite quebrar para a próxima linha */
     justify-content: center;
     gap: 40px;
     padding: 20px;
@@ -165,8 +162,12 @@ header > img {
 .last02 {
     
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* se ajusta ao espaço */
     gap: 15px;
+    justify-items: center; /* <-- centraliza cada imagem */
+    padding-left: 0; /* remove o alinhamento à esquerda */
+    width: 100%;
+      
 }
 
 .p03 {
