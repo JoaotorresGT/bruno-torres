@@ -9,7 +9,7 @@
 
 body {
     background-color: rgb(41, 41, 41);
-    background-image: url(imagens/bg02.png);
+    background-image: url(../imagens/bg02.png);
     background-attachment: fixed;
     font-family: var(--fonte-padrao);
     color: white;
@@ -194,4 +194,8 @@ footer {
     color: #E9D9CC;
     text-align: center;
     padding: 100px 20px 20px 20px;
+}
+
+#seta:hover {
+  transform: scale(0);
 }

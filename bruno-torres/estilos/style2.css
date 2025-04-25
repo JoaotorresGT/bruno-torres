@@ -9,7 +9,7 @@
 
 body {
     background-color: rgb(41, 41, 41);
-    background-image: url(imagens/bg02.png);
+    background-image: url(../imagens/bg02.png);
     background-attachment: fixed;
     font-family: var(--fonte-padrao);
     color: white;

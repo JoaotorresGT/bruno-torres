@@ -23,7 +23,7 @@ img:hover {
 
 body {
     background-color: rgb(41, 41, 41);
-    background-image: url(imagens/bg02.png);
+    background-image: url(../imagens/bg02.png);
     background-attachment: fixed;
     font-family: var(--fonte-padrao);
 }
@@ -182,14 +182,7 @@ header > img {
     padding: 20px;
 }
 
-footer {
-    font-size: small;
-    color: #E9D9CC;
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.saibamais, .serviços {
+.serviços {
     display: inline-block;
     font-size: 1.2rem;
     font-weight: bold;
@@ -199,17 +192,24 @@ footer {
     padding: 10px 20px;
     border-radius: 30px;
     margin-top: 20px;
-    transition: background-color 0.5s;
-}
+    transition: background-color 0.3s, transform 0.3s;
+  }
 
+  .serviços:hover {
+    background-color: #014734;
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
 .saibamais:hover, .serviços:hover {
-    background-color: #015c3a;
-    color: white;
+  background-color: #015c3a;
+  color: white;
 }
 
 .linkp {
-    text-decoration: none;
-    color: #E9D9CC;
+  text-align: center;
+  text-decoration: none;
+  color: #E9D9CC;
 }
 
 .prg2 {
@@ -219,6 +219,14 @@ footer {
     margin-left: 30px;
     color: #333;
 }
+
+footer {
+    font-size: small;
+    color: #E9D9CC;
+    text-align: center;
+    padding: 40px 20px;
+}
+
 
 @media screen and (max-width: 768px) {
     .conteudo, .container, .img4, .last02-container {
