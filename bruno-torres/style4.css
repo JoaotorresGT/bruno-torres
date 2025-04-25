@@ -53,7 +53,14 @@ header > img {
     display: block;
 }
 
-.container {
+.centralizador {
+    display: flex;
+    justify-content: center; /* centraliza na horizontal */
+    align-items: center;     /* centraliza na vertical */
+    height: 100vh;           /* ocupa a tela inteira */
+  }
+  
+  .container {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -63,13 +70,6 @@ header > img {
     text-align: left;
     font-size: 4rem;
 }
-
-.centralizador {
-    display: flex;
-    justify-content: center; /* centraliza na horizontal */
-    align-items: center;     /* centraliza na vertical */
-    height: 100vh;           /* ocupa a tela inteira */
-  }
 
 .titulo-com-imagem {
     display: flex;
@@ -82,11 +82,69 @@ header > img {
     height: auto;
   }
 
-h1 {
+  picture, img {
+    margin: 30px auto;
+    max-width: 100%;
     text-align: center;
 }
 
+.contato-box {
+  
+  display: flex;
+  align-items: flex-start;  /* alinha pelo topo */
+  justify-content: center;  /* centraliza na horizontal */
+  gap: 40px;
+  padding: 40px;
+  flex-wrap: wrap; /* quebra linha em telas menores */
+  text-align: left;
 
+  background-color: #E9D9CC;
+}
+
+.contato-lista {
+  text-align: left;
+  list-style-type: none;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 700px;
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  text-align: left; /* isso ajuda em elementos de texto */
+}
+
+.contato-lista li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* <-- isso aqui alinha à esquerda */
+  gap: 10px;
+  font-size: 1.2rem;
+  color: #03503E;
+  padding: 5px 0;
+  word-break: break-word;
+}
+
+.icone {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  display: block;
+}
+
+
+h2 {
+  padding: 130px 50px;
+  max-width: 400px;
+  font-size: 2rem;
+  line-height: 1.4;
+  color: #000000;
+}
+
+.contato-lista li::marker {
+  color: #03503E;
+  font-size: 1.5em;
+}
 
 
 footer {
