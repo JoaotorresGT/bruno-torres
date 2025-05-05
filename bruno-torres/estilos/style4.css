@@ -199,3 +199,69 @@ footer {
 #seta:hover {
   transform: scale(0);
 }
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: row; /* mantém os botões lado a lado */
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  nav > a {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .container {
+    font-size: 2.2rem;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .titulo-com-imagem {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .titulo-com-imagem img {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .contato-box {
+    padding: 20px 10px;
+  }
+
+  .contato-box h2 {
+    padding: 20px;
+    font-size: 1.8rem;
+  }
+
+  .saibamais {
+    width: 100%;
+    justify-content: center;
+  }
+
+  header > img,
+  picture, img {
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+  }
+
+  img:hover {
+    transform: none;
+    box-shadow: none;
+    transition: none;
+  }
+   /* ...regras já existentes... */
+
+  /* limita qualquer ícone ou imagem usado como botão */
+  .contato-box img,
+  .contato-box svg {
+    width: 32px;   /* ajuste como preferir */
+    height: 32px;
+    flex-shrink: 0;
+  }
+}

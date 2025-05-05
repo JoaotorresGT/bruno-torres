@@ -289,5 +289,18 @@ footer {
     .estilo1 {
         display: none;
     }
+    #imagem-mobile-esconder{
+        width: 90%;        /* ocupa 90% da largura da tela */
+        max-width: 300px;  /* limite para não ficar muito grande */
+        height: auto;
+        display: block;
+        margin: 0 auto;    /* centraliza horizontalmente */
+    }
+    
+    img:hover {
+        transform: none;
+        box-shadow: none;
+        transition: none;
+      }
 }
 
