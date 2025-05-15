@@ -1,24 +1,35 @@
 @charset "UTF-8";
+
+/* Importação de fontes do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
 
+/* ============================= */
+/*           VARIÁVEIS           */
+/* ============================= */
 :root {
-    --fonte-padrao: "Inter", sans-serif; 
+    --fonte-padrao: "Inter", sans-serif;
     --fonte-titulo: "Big Shoulders", sans-serif;
 }
 
+/* ============================= */
+/*           BODY                */
+/* ============================= */
 body {
-    background-color: rgb(41, 41, 41);
-    background-image: url(../imagens/bg02.png);
-    background-attachment: fixed;
-    font-family: var(--fonte-padrao);
+    background-color: rgb(41, 41, 41); /* Cor de fundo escura */
+    background-image: url(../imagens/bg02.png); /* Imagem de fundo */
+    background-attachment: fixed; /* Fundo fixo ao rolar */
+    font-family: var(--fonte-padrao); /* Fonte padrão */
     color: white;
 }
 
+/* ============================= */
+/*           NAVBAR              */
+/* ============================= */
 nav {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Permite quebrar em várias linhas */
     gap: 15px;
     margin: 60px 0;
 }
@@ -40,9 +51,12 @@ nav a:hover {
     border-radius: 5px;
 }
 
+/* ============================= */
+/*           IMAGENS             */
+/* ============================= */
 img:hover {
-    transform: scale(1.06);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transform: scale(1.06); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -53,12 +67,7 @@ header > img {
     display: block;
 }
 
-h1 {
-    margin: 100px auto;
-    max-width: 100%;
-    text-align: center;
-    color: #E9D9CC;
-}
+/* Imagens com estilo específico */
 picture, #img1 {
     margin: 100px auto;
     max-width: 100%;
@@ -67,33 +76,46 @@ picture, #img1 {
     border-radius: 30px;
 }
 
+/* Imagens gerais */
 picture, img {
     margin: 30px auto;
     max-width: 100%;
     text-align: center;
 }
 
+/* ============================= */
+/*         TÍTULOS E TEXTO       */
+/* ============================= */
+h1 {
+    margin: 100px auto;
+    max-width: 100%;
+    text-align: center;
+    color: #E9D9CC;
+}
 
+h2 {
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    color: #E9D9CC;
+}
+
+/* ============================= */
+/*           LISTAS              */
+/* ============================= */
 ul {
     font-family: var(--fonte-padrao);
     font-size: medium;
     color: #E9D9CC;
-    list-style-position: inside; /* ou 'outside' se quiser o marcador mais à esquerda ainda */
+    list-style-position: inside; /* Marcadores dentro do bloco */
     text-align: justify;
     padding-left: 20px;
     margin: 0 auto;
-    width: fit-content; /* ou defina um tamanho fixo se quiser */
-  }
-  
-  h2 {
-    font-family: var(--fonte-padrao);
-    text-align: center;
-    color: #E9D9CC;
-    padding: auto;
-  }
+    width: fit-content;
+}
 
-
-
+/* ============================= */
+/*           RODAPÉ              */
+/* ============================= */
 footer {
     font-size: small;
     color: #E9D9CC;

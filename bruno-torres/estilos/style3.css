@@ -1,155 +1,187 @@
 @charset "UTF-8";
+
+/* =============================== */
+/*        IMPORTAÇÃO DE FONTES     */
+/* =============================== */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
 
+/* =============================== */
+/*        VARIÁVEIS GLOBAIS        */
+/* =============================== */
 :root {
-    --fonte-padrao: "Inter", sans-serif; 
-    --fonte-titulo: "Big Shoulders", sans-serif;
+  --fonte-padrao: "Inter", sans-serif;
+  --fonte-titulo: "Big Shoulders", sans-serif;
 }
 
+/* =============================== */
+/*              BODY              */
+/* =============================== */
 body {
-    background-color: rgb(41, 41, 41);
-    background-image: url(../imagens/bg02.png);
-    background-attachment: fixed;
-    font-family: var(--fonte-padrao);
-    color: white;
+  background-color: rgb(41, 41, 41);
+  background-image: url(../imagens/bg02.png);
+  background-attachment: fixed;
+  font-family: var(--fonte-padrao);
+  color: white;
 }
 
+/* =============================== */
+/*              NAV               */
+/* =============================== */
 nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin: 60px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 60px 0;
 }
 
 nav > a {
-    font-family: var(--fonte-padrao);
-    color: #E9D9CC;
-    padding: 5px 10px;
-    text-decoration: none;
-    font-weight: 500;
-    border-radius: 10px;
-    transition: background-color 0.5s;
-    background-color: #03503E;
+  font-family: var(--fonte-padrao);
+  color: #E9D9CC;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 10px;
+  transition: background-color 0.5s;
+  background-color: #03503E;
 }
 
 nav a:hover {
-    background-color: #015c3a;
-    color: white;
-    border-radius: 5px;
+  background-color: #015c3a;
+  color: white;
+  border-radius: 5px;
 }
 
+/* =============================== */
+/*        EFEITOS EM IMAGENS      */
+/* =============================== */
 img:hover {
-    transform: scale(1.06);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transform: scale(1.06);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 header > img {
-    margin: 100px auto;
-    max-width: 100%;
-    height: auto;
-    display: block;
+  margin: 100px auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
+picture, img {
+  margin: 30px auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+/* =============================== */
+/*         SEÇÕES DE TEXTO        */
+/* =============================== */
 .container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 40px;
-    max-width: 600px;
-    color: #E9D9CC;
-    text-align: left;
-    font-size: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  max-width: 600px;
+  color: #E9D9CC;
+  text-align: left;
+  font-size: 4rem;
 }
 
 .centralizador {
-    display: flex;
-    justify-content: center; /* centraliza na horizontal */
-    align-items: center;     /* centraliza na vertical */
-    height: 100vh;           /* ocupa a tela inteira */
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
 .titulo-com-imagem {
-    display: flex;
-    align-items: center; /* alinha verticalmente */
-    gap: 15px; /* espaço entre o h1 e a imagem */
-  }
-  
-  .titulo-com-imagem img {
-    width: 500px; /* ou o tamanho que quiser */
-    height: auto;
-  }
-
-  picture, img {
-    margin: 30px auto;
-    max-width: 100%;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
+.titulo-com-imagem img {
+  width: 500px;
+  height: auto;
+}
+
+/* =============================== */
+/*          SERVIÇOS GRID         */
+/* =============================== */
 .servicos-container {
-    background-color: #e9d9cc;
-    padding: 40px 20px;
-    display: flex;
-    max-width: 1200px;
-    width: 100%;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-  }
+  background-color: #e9d9cc;
+  padding: 40px 20px;
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: center;
+  list-style: none;
+}
 
 .lista-servicos {
-    background-color: #E9D9CC;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  .lista-servicos .item {
-    flex: 1 1 300px; /* cresce, encolhe, largura mínima */
-    max-width: 400px;
-  }
-  
-  .lista-servicos dt {
-    font-weight: bold;
-    font-size: 1.3em;
-    margin-bottom: 5px;
-    font-family: var(--fonte-titulo);
-    color: #03503E;
-  }
-  
-  .lista-servicos dd {
-    margin: 0 0 20px 0;
-    font-family: var(--fonte-padrao);
-    color: #333;
-  }
-
-  .item-centralizado:nth-child(4) {
-    grid-column: 2; /* posiciona a primeira da segunda linha na coluna do meio */
-  }
-  
-  .item-centralizado:nth-child(5) {
-    grid-column: 3; /* posiciona a segunda da segunda linha na terceira coluna */
-  }
-  
-  h2 {
-    text-align: left;
-    color: #03503E;
-  }
-  h3 {
-    text-align: center;
-  }
-
-  footer {
-    font-size: small;
-    color: #E9D9CC;
-    text-align: center;
-    padding: 100px 20px 20px 20px;
+  background-color: #E9D9CC;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+  padding: 20px;
 }
 
+.lista-servicos .item {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.lista-servicos dt {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: 5px;
+  font-family: var(--fonte-titulo);
+  color: #03503E;
+}
+
+.lista-servicos dd {
+  margin: 0 0 20px 0;
+  font-family: var(--fonte-padrao);
+  color: #333;
+}
+
+/* Centralização específica de itens */
+.item-centralizado:nth-child(4) {
+  grid-column: 2;
+}
+
+.item-centralizado:nth-child(5) {
+  grid-column: 3;
+}
+
+/* =============================== */
+/*        TÍTULOS (H2, H3)        */
+/* =============================== */
+h2 {
+  text-align: left;
+  color: #03503E;
+}
+
+h3 {
+  text-align: center;
+}
+
+/* =============================== */
+/*            FOOTER              */
+/* =============================== */
+footer {
+  font-size: small;
+  color: #E9D9CC;
+  text-align: center;
+  padding: 100px 20px 20px 20px;
+}
+
+/* =============================== */
+/*        MEDIA QUERIES (RESP)    */
+/* =============================== */
 @media screen and (max-width: 768px) {
   .container,
   .centralizador,
@@ -173,15 +205,12 @@ header > img {
   }
 
   nav {
-    display: flex;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; /* permite quebra de linha se não couber */
+    flex-wrap: wrap;
     gap: 15px;
     margin: 60px 0;
-    flex-direction: row; /* importante para alinhar lado a lado */
+    flex-direction: row;
   }
-  
 
   .lista-servicos {
     grid-template-columns: 1fr;
